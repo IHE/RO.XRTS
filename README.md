@@ -1,6 +1,8 @@
 # Status
 This repository is under-construction. Draft for XRTS created based on https://github.com/IHE/supplement-template.git
 
+A temporary published build is here http://build.fhir.org/ig/IHE/RO.XRTS/branches/master/index.html
+
 ![](input/images/XRTSScope.svg)
 
 The IG should be moved under IHE. This location is just for first experiments.

@@ -17,7 +17,7 @@ Whenever new contributions in the scope of the same Course are delivered, this r
 
 Instance: RadiotherapyCourseSummary-04-XRTS-Prostate
 InstanceOf: RadiotherapyCourseSummary
-Description: "Treatment Summary over Radiotherapy Intent with all elements expected in XRTS."
+Description: "Treatment Summary over Radiotherapy Course with all elements expected in XRTS."
 Usage: #example
 * id = "RadiotherapyCourseSummary-04-XRTS-Prostate" //id of the FHIR Resource
 * meta.versionId = "1233456"
@@ -51,5 +51,5 @@ Usage: #example
 * reasonCode = ICD10#C61.0 "Malignant neoplasm of prostate" //Try to use Condition resource for diagnosis in XRTS
 * reasonCode.text = "Malignant neoplasm of prostate" //Try to use Condition resource for diagnosis in XRTS 
 * reasonReference.reference = "Condition/Diagnosis-2-Prostate" //In ARIA, diagnoses related to Course
-* bodySite = SCT#181422007 "Entire Prostate" // "Body site that is treated with Radiotherapy"
+* bodySite = SCT#181422007 "Entire prostate" // "Body site that is treated with Radiotherapy"
 * bodySite.text = "Prostate"

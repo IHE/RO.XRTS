@@ -33,7 +33,6 @@ Usage: #example
 * meta.lastUpdated = "2020-10-28T13:22:17+01:00"
 * meta.profile[0] = "https://profiles.ihe.net/RO.XRTS/StructureDefinition/TeleradiotherapyTreatmentPhase"
 * meta.profile[1] = "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-teleradiotherapy-treatment-phase"
-* extension[http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-treatment-intent].valueCodeableConcept = SCT#373808002 "Curative - procedure intent"
 * extension[http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-fractions-delivered].valueUnsignedInt = 2
 // Prescription Target Site "Prostate"
 * extension[http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-dose-delivered-to-volume][0].extension[volume].valueReference.reference = "BodyStructure/RadiotherapyVolume-03-Prostate"
@@ -59,6 +58,6 @@ Usage: #example
 * reasonCode = ICD10#C61.0 "Malignant neoplasm of prostate" //Try to use Condition resource for diagnosis in XRTS
 * reasonCode.text = "Malignant neoplasm of prostate" //Try to use Condition resource for diagnosis in XRTS 
 * reasonReference.reference = "Condition/Diagnosis-2-Prostate" //In ARIA, diagnoses related to Course
-* bodySite = SCT#181422007 "Entire Prostate" // "Body site that is treated with Radiotherapy"
+* bodySite = SCT#181422007 "Entire prostate" // "Body site that is treated with Radiotherapy"
 * bodySite.text = "Prostate"
 

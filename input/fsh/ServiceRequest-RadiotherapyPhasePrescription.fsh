@@ -69,6 +69,7 @@ Title: "Teleradiotherapy Phase Prescription"
 Description: "A Teleradioherapy Phase Prescription is a request for one series of fractionated treatments using External Beam Radiotherapy. It can define treatment parameters such as modality or technique,
 and prescribe dose to multiple targets."
 * insert RadiotherapyRequestCommon
+* insert RadiotherapyPhasePrescriptionCommon
 * code = RadiotherapyRequest#teleradiotherapy-phase-prescription "Teleradiotherapy Phase Prescription" 	
 
 // Modelled in alignment with mCODE Teleradiotherapy Treatment Phase.
@@ -79,6 +80,7 @@ Title: "Brachytherapy Phase Prescription"
 Description: "A Brachytherapy Phase Prescription is a request for one series of fractionated treatments using Brachytherapy. It can define treatment parameters such as modality or technique,
 and prescribe dose to multiple targets."
 * insert RadiotherapyRequestCommon
+* insert RadiotherapyPhasePrescriptionCommon
 * code = RadiotherapyRequest#brachytherapy-phase-prescription "Brachytherapy Phase Prescription" 	
 
 
@@ -92,8 +94,6 @@ Usage: #example
 * meta.versionId = "219952" //Version of the resource on the server
 * meta.lastUpdated = "2020-07-03T10:07:41.050+02:00" //Update of the resource on the server. See separate extentsion for modification date of clinical contents.
 * meta.profile = "https://profiles.ihe.net/RO.XRTS/StructureDefinition/TeleradiotherapyPhasePrescription"
-* extension[http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-treatment-intent].valueCodeableConcept = SCT#373808002 "Curative - procedure intent"
-* extension[http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-treatment-intent].valueCodeableConcept.text = "Curative"   
 * extension[http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-modality][0].valueCodeableConcept = SCT#1156506007 "External beam radiation therapy using photons (procedure)"
 * extension[http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-technique][0].valueCodeableConcept.coding[0] = SCT#1156526006 "Three dimensional external beam radiation therapy (procedure)"
 * extension[http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-technique][0].valueCodeableConcept.coding[1] = http://varian.com/fhir/CodeSystem/aria-radiotherapyPrescriptionTechnique#ARC "Arc"
@@ -130,7 +130,7 @@ Usage: #example
 * reasonCode = ICD10#C61.0 "Malignant neoplasm of prostate" //Try to use Condition resource for diagnosis in XRTS
 * reasonCode.text = "Malignant neoplasm of prostate" //Try to use Condition resource for diagnosis in XRTS 
 * reasonReference.reference = "Condition/Diagnosis-2-Prostate" 
-* bodySite = SCT#181422007 "Entire Prostate" // "Body site that is treated with Radiotherapy"
+* bodySite = SCT#181422007 "Entire prostate" // "Body site that is treated with Radiotherapy"
 * bodySite.text = "Prostate" 
 * note.text = "Free text note in Radiotherapy Prescription"
 
@@ -142,8 +142,6 @@ Usage: #example
 * meta.versionId = "219952" //Version of the resource on the server
 * meta.lastUpdated = "2020-07-03T10:07:41.050+02:00" //Update of the resource on the server. See separate extentsion for modification date of clinical contents.
 * meta.profile = "https://profiles.ihe.net/RO.XRTS/StructureDefinition/TeleradiotherapyPhasePrescription"
-* extension[http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-treatment-intent].valueCodeableConcept = SCT#373808002 "Curative - procedure intent"
-* extension[http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-treatment-intent].valueCodeableConcept.text = "Curative"   
 * extension[http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-modality][0].valueCodeableConcept = SCT#1156506007 "External beam radiation therapy using photons (procedure)"
 * extension[http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-technique][0].valueCodeableConcept.coding[0] = SCT#1156526006 "Three dimensional external beam radiation therapy (procedure)"
 * extension[http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-technique][0].valueCodeableConcept.coding[1] = http://varian.com/fhir/CodeSystem/aria-radiotherapyPrescriptionTechnique#ARC "Arc"
@@ -177,82 +175,7 @@ Usage: #example
 * reasonCode = ICD10#C61.0 "Malignant neoplasm of prostate" //Try to use Condition resource for diagnosis in XRTS
 * reasonCode.text = "Malignant neoplasm of prostate" //Try to use Condition resource for diagnosis in XRTS 
 * reasonReference.reference = "Condition/Diagnosis-2-Prostate" 
-* bodySite = SCT#181422007 "Entire Prostate" // "Body site that is treated with Radiotherapy"
+* bodySite = SCT#181422007 "Entire prostate" // "Body site that is treated with Radiotherapy"
 * bodySite.text = "Prostate"
 * note.text = "Free text note in Radiotherapy PhasePrescription"
 
-
-Instance: TeleradiotherapyPhasePrescription-11-RTTD-LeftBreastTangents
-InstanceOf: TeleradiotherapyPhasePrescription
-Description: "Radiotherapy Phase Prescription example from Codex RTTD collection."
-Usage: #example
-* id = "TeleradiotherapyPhasePrescription-11-RTTD-LeftBreastTangents" //id of the FHIR Resource
-* meta.profile = "https://profiles.ihe.net/RO.XRTS/StructureDefinition/TeleradiotherapyPhasePrescription"
-* extension[http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-modality][0].valueCodeableConcept = SCT#1156506007 "External beam radiation therapy using photons (procedure)"
-* extension[http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-technique][0].valueCodeableConcept.coding[0] = SCT#1156526006 "Three dimensional external beam radiation therapy (procedure)"
-* extension[radiotherapy-fractions-prescribed].valuePositiveInt = 25
-// Prescription Target Site "Left Breast"
-* extension[radiotherapy-dose-prescribed-to-volume][0].extension[volume].valueReference.reference = "BodyStructure/RadiotherapyVolume-11-LeftBreast"
-* extension[radiotherapy-dose-prescribed-to-volume][0].extension[fractionDosePrescribed].valueQuantity.value = 200  
-* extension[radiotherapy-dose-prescribed-to-volume][0].extension[totalDosePrescribed].valueQuantity.value = 5000 
-// Prescription Target Site "Left Breast Boost"
-* extension[radiotherapy-dose-prescribed-to-volume][1].extension[volume].valueReference.reference = "BodyStructure/RadiotherapyVolume-12-LeftBreastBoost"
-* extension[radiotherapy-dose-prescribed-to-volume][0].extension[fractionDosePrescribed].valueQuantity.value = 200  
-* extension[radiotherapy-dose-prescribed-to-volume][1].extension[totalDosePrescribed].valueQuantity.value = 5000 
-* identifier[0].use = #usual
-* identifier[0].system = "http://varian.com/fhir/identifier/radiotherapyPhaseId"
-* identifier[0].value = "Left Breast Tangents"
-* identifier[1].system = "urn:dicom:uid"
-* identifier[1].value = "urn:oid:2.16.124.113543.1154777499.30246.19789.3503430456.2.1" 
-* status = #active
-* subject.reference = "Patient/Patient-5"
-* bodySite = SCT#76752008 "Breast structure (body structure)" 
-* note.text = "Free text note in Radiotherapy Phase Prescription"
-
-
-Instance: TeleradiotherapyPhasePrescription-12-RTTD-LeftBreastBoost
-InstanceOf: TeleradiotherapyPhasePrescription
-Description: "Radiotherapy Phase Prescription example from Codex RTTD collection."
-Usage: #example
-* id = "TeleradiotherapyPhasePrescription-12-RTTD-LeftBreastBoost" //id of the FHIR Resource
-* meta.profile = "https://profiles.ihe.net/RO.XRTS/StructureDefinition/TeleradiotherapyPhasePrescription"
-* extension[http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-modality][0].valueCodeableConcept = SCT#45643008 "Teleradiotherapy using electrons (procedure)"
-* extension[http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-technique][0].valueCodeableConcept.coding[0] = SCT#1156526006 "Three dimensional external beam radiation therapy (procedure)"
-* extension[radiotherapy-fractions-prescribed].valuePositiveInt = 5
-// Prescription Target Site "Left Breast Boost"
-* extension[radiotherapy-dose-prescribed-to-volume][0].extension[volume].valueReference.reference = "BodyStructure/RadiotherapyVolume-12-LeftBreastBoost"
-* extension[radiotherapy-dose-prescribed-to-volume][0].extension[fractionDosePrescribed].valueQuantity.value = 200  
-* extension[radiotherapy-dose-prescribed-to-volume][0].extension[totalDosePrescribed].valueQuantity.value = 1000 
-* identifier[0].use = #usual
-* identifier[0].system = "http://varian.com/fhir/identifier/radiotherapyPhaseId"
-* identifier[0].value = "Left Breast Boost"
-* identifier[1].system = "urn:dicom:uid"
-* identifier[1].value = "urn:oid:2.16.124.113543.1154777499.30246.19789.3503430456.2.1" 
-* status = #active
-* subject.reference = "Patient/Patient-5"
-* bodySite = SCT#76752008 "Breast structure (body structure)" 
-* note.text = "Free text note in Radiotherapy Phase Prescription"
-
-
-Instance: TeleradiotherapyPhasePrescription-13-RTTD-RightBreastTangents
-InstanceOf: TeleradiotherapyPhasePrescription
-Description: "Radiotherapy Phase Prescription example from Codex RTTD collection."
-Usage: #example
-* id = "TeleradiotherapyPhasePrescription-13-RTTD-RightBreastTangents" //id of the FHIR Resource
-* meta.profile = "https://profiles.ihe.net/RO.XRTS/StructureDefinition/TeleradiotherapyPhasePrescription"
-* extension[http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-modality][0].valueCodeableConcept = SCT#1156506007 "External beam radiation therapy using photons (procedure)"
-* extension[http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-technique][0].valueCodeableConcept.coding[0] = SCT#1156526006 "Three dimensional external beam radiation therapy (procedure)"
-* extension[radiotherapy-fractions-prescribed].valuePositiveInt = 25
-// Prescription Target Site "Right Breast"
-* extension[radiotherapy-dose-prescribed-to-volume][0].extension[volume].valueReference.reference = "BodyStructure/RadiotherapyVolume-13-RightBreast"
-* extension[radiotherapy-dose-prescribed-to-volume][0].extension[fractionDosePrescribed].valueQuantity.value = 200  
-* extension[radiotherapy-dose-prescribed-to-volume][0].extension[totalDosePrescribed].valueQuantity.value = 5000 
-* identifier[0].use = #usual
-* identifier[0].system = "http://varian.com/fhir/identifier/radiotherapyPhaseId"
-* identifier[0].value = "Right Breast Tangents"
-* identifier[1].system = "urn:dicom:uid"
-* identifier[1].value = "urn:oid:2.16.124.113543.1154777499.30246.19789.3503430456.2.1" 
-* status = #active
-* subject.reference = "Patient/Patient-5"
-* bodySite = SCT#76752008 "Breast structure (body structure)" 
-* note.text = "Free text note in Radiotherapy Phase Prescription"

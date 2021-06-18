@@ -1,9 +1,13 @@
 # Status
-This repository is under-construction. Draft for XRTS created based on https://github.com/IHE/supplement-template.git
+This repository is under-construction and not reviewed with IHE-RO XRTS yet.
+
+A temporary published build is here http://build.fhir.org/ig/IHE/RO.XRTS/branches/master/index.html
+
+Please see primarily the artifacts at http://build.fhir.org/ig/IHE/RO.XRTS/branches/master/artifacts.html for ongoing work in progress.
+
+The rest is mostly still template text.
 
 ![](input/images/XRTSScope.svg)
-
-The IG should be moved under IHE. This location is just for first experiments.
 
 # Overall organization
 ![](https://github.com/IHE/supplement-template/wiki/SupplementOrganization.svg)

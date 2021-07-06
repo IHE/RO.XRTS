@@ -3,14 +3,26 @@
 // Contact: martin.vonsiebenthal@varian.com
 //--------------------------------------------------------------------------------------------------------
 
+RuleSet: RadiotherapyTreatmentPhaseCommon
+* obeys xrts-procedure-status
+* partOf MS
+* partOf only Reference(RadiotherapyCourseSummary)
+* basedOn MS
+* performed[x] only Period
+* performedPeriod.start MS
+* performedPeriod.start ^short = "The date and time when the first therapeutic radiation was delivered."
+* performedPeriod.end MS
+* performedPeriod.end ^short = "An end date is expected if the status is 'stopped' or 'completed'"
+
 Profile: TeleradiotherapyTreatmentPhase
 Parent: http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-teleradiotherapy-treatment-phase
 Id: TeleradiotherapyTreatmentPhase
 Title: "Teleradiotherapy Treatment Phase"
 Description: "A Summary of the Treatment Progress over an External Beam Treatment Phase. 
 Whenever new contributions in the scope of the same Phase are delivered, this resource is updated (no new resource created)."
+* insert RadiotherapyTreatmentPhaseCommon
 * ^status = #draft
-* basedOn only Reference(TeleradiotherapyPhasePrescription)
+* basedOn ^short = "Should Reference a https://profiles.ihe.net/RO.XRTS/StructureDefinition/TeleradiotherapyPhasePrescription" // only Reference(TeleradiotherapyPhasePrescription)
 
 Profile: BrachytherapyTreatmentPhase
 Parent: http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-brachytherapy-treatment-phase
@@ -18,9 +30,9 @@ Id: BrachytherapyTreatmentPhase
 Title: "Brachytherapy Treatment Phase"
 Description: "A Summary of the Treatment Progress over a Brachytherapy Treatment Phase. 
 Whenever new contributions in the scope of the same Phase are delivered, this resource is updated (no new resource created)."
+* insert RadiotherapyTreatmentPhaseCommon
 * ^status = #draft
-* basedOn only Reference(BrachytherapyPhasePrescription)
-
+* basedOn ^short = "Should Reference a https://profiles.ihe.net/RO.XRTS/StructureDefinition/BrachytherapyPhasePrescription" // only Reference(BrachytherapyPhasePrescription)
 
 // -------- Example Instances ---------------------------------------------------------
 

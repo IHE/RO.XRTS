@@ -2,14 +2,16 @@
 
 **Contents is work in progress, not reviewed in IHE-RO XRTS yet.**
 
-**Please see the [Artifacts Page](artifacts.html).**
+**Please see the [Artifacts Page](artifacts.html) for resource profiles.** 
 
-**The rest is still mostly template.**
-
+**The rest is still mostly template text. Ask the [IHE-RO Technical Committee](mailto:ro@ihe.net) for the latest working copy of the Supplement as a Word document.**
 
 ![RT Summary Model for XRTS](XRTSScope.svg)
 
 <div style="clear: left"/>
+
+![RT Summary Model for XRTS](ProcessFlow-EndofTreatmentSummary-Subscription.svg)
+
 <div style="clear: left"/>
 
 ### Organization of This Guide

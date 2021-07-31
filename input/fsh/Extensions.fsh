@@ -10,7 +10,7 @@ RuleSet: ExtensionContext(path)
 
 Extension: RadiotherapyTreatmentDeviceType
 Id: radiotherapyTreatmentDeviceType
-Title: "Type of Treatment Device"
+Title: "(Future) Type of Treatment Device"
 Description: "The type of device used for delivering the Radiotherapy. This can be a type of treatment machine or auxiliary device, for example a positioning device. 
 Device instances are not specified here. Those are represented by resources of type Device."
 * . ^short = "Type of Treatment Device"
@@ -21,7 +21,7 @@ Device instances are not specified here. Those are represented by resources of t
 // http://hl7.org/fhir/us/mcode/2021May/StructureDefinition-mcode-radiotherapy-fractions-delivered.html
 Extension: RadiotherapyFractionsPrescribed
 Id: radiotherapy-fractions-prescribed
-Title: "Number of Prescribed Fractions"
+Title: "(Future) Number of Prescribed Fractions"
 Description: "The number of prescribed Fractions in this scope. 
 This extension SHALL only be present if the treatment is structured as countable Fractions, for example in a Phase Prescription."
 * . ^short = "Number of Prescribed Fractions"
@@ -32,7 +32,7 @@ This extension SHALL only be present if the treatment is structured as countable
 //http://hl7.org/fhir/us/mcode/2021May/StructureDefinition-mcode-radiotherapy-dose-delivered-to-volume.html
 Extension: RadiotherapyDosePrescribedToVolume
 Id: radiotherapy-dose-prescribed-to-volume
-Title: "Dose Prescribed to Volume"
+Title: "(Future) Dose Prescribed to Volume"
 Description: "Dose parameters prescribed for one radiotherapy volume."
 * . ^short = "Prescribed Dose to a Dose Reference"
 * extension contains
@@ -57,7 +57,7 @@ Description: "Dose parameters prescribed for one radiotherapy volume."
 
 Extension: RadiotherapyEnergy
 Id: radiotherapy-energy
-Title: "Radiotherapy Energy"
+Title: "(Future) Radiotherapy Energy"
 Description: "The radiation energy, preferably specified as decimal in MV. Can alternatively be represented as string or CodeableConcept."
 * . ^short = "Radiotherapy Energy"
 * value[x] ^short = "The radiation energy as decimal in MV. Can alternatively be represented as string or CodeableConcept." 

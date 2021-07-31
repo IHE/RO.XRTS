@@ -6,7 +6,7 @@
 Profile: RadiotherapyCoursePrescription
 Parent: ServiceRequest
 Id: RadiotherapyCoursePrescription
-Title: "Radiotherapy Course Prescription"
+Title: "(Future) Radiotherapy Course Prescription"
 Description: "Radiotherapy Course Prescription is the high-level request for Radiotherapy that may be fulfilled by one or multiple Phases. 
 Usually, the Course addresses one disease and anatomical treatment site and covers the whole treatment of that site."
 * ^status = #draft

@@ -65,7 +65,7 @@ RuleSet: RadiotherapyPhasePrescriptionCommon
 Profile: TeleradiotherapyPhasePrescription
 Parent: ServiceRequest 
 Id: TeleradiotherapyPhasePrescription
-Title: "Teleradiotherapy Phase Prescription"
+Title: "(Future) Teleradiotherapy Phase Prescription"
 Description: "A Teleradioherapy Phase Prescription is a request for one series of fractionated treatments using External Beam Radiotherapy. It can define treatment parameters such as modality or technique,
 and prescribe dose to multiple targets."
 * insert RadiotherapyRequestCommon
@@ -76,7 +76,7 @@ and prescribe dose to multiple targets."
 Profile: BrachytherapyPhasePrescription
 Parent: ServiceRequest 
 Id: BrachytherapyPhasePrescription
-Title: "Brachytherapy Phase Prescription"
+Title: "(Future) Brachytherapy Phase Prescription"
 Description: "A Brachytherapy Phase Prescription is a request for one series of fractionated treatments using Brachytherapy. It can define treatment parameters such as modality or technique,
 and prescribe dose to multiple targets."
 * insert RadiotherapyRequestCommon

@@ -5,14 +5,14 @@
 
 ValueSet: RadiotherapyRequest 
 Id: radiotherapy-request 
-Title: "Radiotherapy Request"
+Title: "(Future) Radiotherapy Request"
 Description: "Codes to specify which kind of Radiotherapy request is covered by a request resource."
 * ^status = #draft
 * codes from system RadiotherapyRequest 
 
 CodeSystem: RadiotherapyRequest
 Id: radiotherapy-request 
-Title: "Radiotherapy Request"
+Title: "(Future) Radiotherapy Request"
 Description: "Specifies which kind of Radiotherapy request is covered by a request resource."
 * ^status = #draft
 * #radiotherapy-course-prescription	"Radiotherapy Course Prescription" 	"Identifies a ServiceRequest resource for a complete Course of Radiotherapy treatment."

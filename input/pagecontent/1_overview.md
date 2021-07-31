@@ -16,15 +16,6 @@ The following figure shows the main entities modelled in the scope of this IG fo
 <div style="clear: left"/>
 <div style="clear: left"/>
 
-To put these entities in a broader Radiotherapy context, the following figure shows a larger scope including Treatment Plans, single Fractions, and the Intent, which is the main input to define treatment.
-Those additional entities are not in scope yet.
-
-![RT Summary Model for XRTS](RTSummaryModel.svg)
-
-<div style="clear: left"/>
-<div style="clear: left"/>
-
-
 ### About This Guide
 
 &lt;executive overview of the profile purpose&gt;

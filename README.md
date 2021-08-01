@@ -1,5 +1,5 @@
 # Status
-This repository is under-construction and not reviewed with IHE-RO XRTS yet.
+This repository is under construction and not reviewed with IHE-RO XRTS yet.
 
 A temporary published build is here http://build.fhir.org/ig/IHE/RO.XRTS/branches/master/index.html
 

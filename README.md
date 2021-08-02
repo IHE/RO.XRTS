@@ -5,7 +5,10 @@ A temporary published build is here http://build.fhir.org/ig/IHE/RO.XRTS/branche
 
 Please see primarily the artifacts at http://build.fhir.org/ig/IHE/RO.XRTS/branches/master/artifacts.html for ongoing work in progress.
 
-The rest is mostly still template text.
+The rest is mostly still template text. 
+
+See working version of the Word document for more contents on use cases, transactions, etc. 
+https://www.dropbox.com/sh/vfndrz3nasdajb8/AACEtz2zGLgJ4HzFly_Rsc6Ya?dl=0
 
 ![](input/images/XRTSScope.svg)
 

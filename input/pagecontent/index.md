@@ -1,12 +1,20 @@
 
-
-**Contents is work in progress, not reviewed in IHE-RO XRTS yet.**
+**Contents is work in progress.**
 
 **Please see the [Artifacts Page](artifacts.html) for resource profiles.** 
 
-**The rest is still mostly template text. Ask the [IHE-RO Technical Committee](mailto:ro@ihe.net) for the latest working copy of the Supplement as a Word document.**
+**The scope for first XRTS trials is limited to Course Summary and Radiotherapy Volumes.**
 
-![RT Summary Model for XRTS](XRTSScope.svg)
+**For those profiles, XRTS refers to the [CodeX RT IG:](https://build.fhir.org/ig/HL7/codex-radiation-therapy/index.html), 
+which contains also the [XRTS test examples](https://build.fhir.org/ig/HL7/codex-radiation-therapy/artifacts.html#example-example-instances).**
+
+**Codex RT in turn refers to [mCODE STU2](http://build.fhir.org/ig/HL7/fhir-mCODE-ig/group-treatment.html)**
+
+**The IG here is mostly template text and establishing the relations to these specifications.**
+
+**Ask the [IHE-RO Technical Committee](mailto:ro@ihe.net) for the latest working copy of the Supplement as a Word document.**
+
+![RT Summary Model for XRTS](RTResourcesOverview.svg)
 
 <div style="clear: left"/>
 

@@ -42,8 +42,8 @@
     <!--This is whatever FHIR version the IG artifacts are targeting (not the version of this file, which should always be 'current release') -->
     <fhirVersion value = "4.0.1"/>
     <dependsOn id = "hl7_fhir_us_codexrt">
-        <uri value = "http://build.fhir.org/ig/HL7/codex-radiation-therapy/ImplementationGuide/hl7.fhir.us.codexrt"/>
-        <packageId value = "hl7.fhir.us.codexrt"/>
+        <uri value = "http://build.fhir.org/ig/HL7/codex-radiation-therapy/ImplementationGuide/hl7.fhir.us.codex-radiation-therapy"/>
+        <packageId value = "hl7.fhir.us.codex-radiation-therapy"/>
         <version value = "current"/>
     </dependsOn>
     <dependsOn id = "hl7_fhir_us_mcode">

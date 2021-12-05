@@ -3,7 +3,7 @@ This repository is under construction and not reviewed with IHE-RO XRTS yet.
 
 A temporary published build is here http://build.fhir.org/ig/IHE/RO.XRTS/branches/master/index.html
 
-Please see primarily the artifacts at http://build.fhir.org/ig/IHE/RO.XRTS/branches/master/artifacts.html for ongoing work in progress.
+Please see the artifacts at http://build.fhir.org/ig/IHE/RO.XRTS/branches/master/artifacts.html for ongoing work in progress.
 
 The rest is mostly still template text. 
 

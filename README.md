@@ -10,7 +10,7 @@ http://build.fhir.org/ig/HL7/codex-radiation-therapy/branches/master/index.html
 
 For questions and comments, please contact [Martin von Siebenthal](mailto:martin.vonsiebenthal@varian.com).
 
-If it turns out that an IHE profile is need on top of CodeX RT again, this IG here will be updated accordingly.
+If it turns out that an IHE profile is needed on top of CodeX RT again, this IG here will be updated accordingly.
 
 A temporary published build is here http://build.fhir.org/ig/IHE/RO.XRTS/branches/master/index.html
 

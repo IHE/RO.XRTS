@@ -1,9 +1,20 @@
 # Status
-This repository is under construction and not reviewed with IHE-RO XRTS yet.
+This repository is outdated. 
+
+The current assumption is that the IHE-RO XRTS supplement can directly reference the CodeX RT FHIR IG.
+
+Repo at https://github.com/HL7/codex-radiation-therapy
+
+Published to a temporary location here 
+http://build.fhir.org/ig/HL7/codex-radiation-therapy/branches/master/index.html
+
+For questions and comments, please contact [Martin von Siebenthal](mailto:martin.vonsiebenthal@varian.com).
+
+If it turns out that an IHE profile is need on top of CodeX RT again, this IG here will be updated accordingly.
 
 A temporary published build is here http://build.fhir.org/ig/IHE/RO.XRTS/branches/master/index.html
 
-Please see the artifacts at http://build.fhir.org/ig/IHE/RO.XRTS/branches/master/artifacts.html for ongoing work in progress.
+Please see the artifacts at http://build.fhir.org/ig/IHE/RO.XRTS/branches/master/artifacts.html.
 
 The rest is mostly still template text. 
 
